@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "고양이 로딩스피너",
+  "version": "1.0",
+  "description": "웹사이트들의 모든 로딩스피너를 고양이 밈으로 대체합니다.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
